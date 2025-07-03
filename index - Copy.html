@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Mahendra School | Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .school-blue {
+            background-color: #1a365d;
+        }
+        
+        .school-gold {
+            color: #d4af37;
+        }
+        
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                              url('over.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .facility-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="school-blue text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="logo1.jpg" alt="Shree Mahendra School logo featuring a book and torch emblem" class="h-12">
+                    <span class="text-xl font-bold">Shree Mahendra School</span>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-gray-300">Home</a>
+                    <a href="#about" class="hover:text-gray-300">About Us</a>
+                    <a href="#academics" class="hover:text-gray-300">Academics</a>
+                    <a href="#facilities" class="hover:text-gray-300">Facilities</a>
+                    <a href="#gallery" class="hover:text-gray-300">Gallery</a>
+                    <a href="#contact" class="hover:text-gray-300">Contact</a>
+                    <a href="#admission" class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded font-medium">Admission</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden school-blue">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-3">
+                <a href="#home" class="block hover:text-gray-300">Home</a>
+                <a href="#about" class="block hover:text-gray-300">About Us</a>
+                <a href="#academics" class="block hover:text-gray-300">Academics</a>
+                <a href="#facilities" class="block hover:text-gray-300">Facilities</a>
+                <a href="#gallery" class="block hover:text-gray-300">Gallery</a>
+                <a href="#contact" class="block hover:text-gray-300">Contact</a>
+                <a href="#admission" class="block bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded font-medium text-center">Admission</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Shaping Future Leaders</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8">Providing quality education with modern facilities and experienced faculty since 2017 B.S</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#admission" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-bold text-lg transition duration-300">Enroll Now</a>
+                <a href="#about" class="border-2 border-white hover:bg-white hover:text-black px-8 py-3 rounded-full font-bold text-lg transition duration-300">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Shree Mahendra School</h2>
+            
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="md:w-1/2">
+                    <img src="school.jpeg" alt="Modern school building of Shree Mahendra School with green lawns and students walking" class="rounded-lg shadow-lg">
+                    <img src="school2.jpeg" alt="Modern school building of Shree Mahendra School with green lawns and students walking" class="rounded-lg shadow-lg">
+          
+                    <!-- <img src="school3.jpeg" alt="Modern school building of Shree Mahendra School with green lawns and students walking" class="rounded-lg shadow-lg"> -->
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 school-blue">Our Legacy</h3>
+                    <p class="mb-4 text-gray-700">Founded in 2017 B.S, Shree Mahendra School has been a beacon of quality education in the region. We believe in holistic development that nurtures intellectual, physical, and emotional growth.</p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 school-blue">Our Mission</h3>
+                    <p class="mb-4 text-gray-700">To provide an inclusive learning environment that fosters creativity, critical thinking, and character development, preparing students to excel in an ever-changing world.</p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 school-blue">Our Values</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="school-gold mr-2">✓</span>
+                            Excellence in academic and extracurricular activities
+                        </li>
+                        <li class="flex items-start">
+                            <span class="school-gold mr-2">✓</span>
+                            Integrity and ethical conduct
+                        </li>
+                        <li class="flex items-start">
+                            <span class="school-gold mr-2">✓</span>
+                            Respect for diversity and individuality
+                        </li>
+                        <li class="flex items-start">
+                            <span class="school-gold mr-2">✓</span>
+                            Commitment to community service
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Academics</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pre-Primary -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg border-t-4 border-blue-500">
+                    <div class="text-center mb-6">
+                        <img src="pre.jpg" alt="Colorful classroom with young children engaged in playful learning activities" class="mx-auto h-20 w-20 rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Pre-Primary</h3>
+                    <p class="text-gray-700 mb-4">Play-based learning approach for ages 3-6 focusing on cognitive, social, and motor skills development.</p>
+                    <div class="text-center">
+                        <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+                    </div>
+                </div>
+                
+                <!-- Primary -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg border-t-4 border-yellow-500">
+                    <div class="text-center mb-6">
+                        <img src="b.jpg" alt="Elementary students working together on a science project in a bright classroom" class="mx-auto h-20 w-20 rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Primary</h3>
+                    <p class="text-gray-700 mb-4">Grades 1-5 curriculum emphasizing foundational literacy, numeracy, and creative expression.</p>
+                    <div class="text-center">
+                        <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+                    </div>
+                </div>
+                
+                <!-- Secondary -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg border-t-4 border-green-500">
+                    <div class="text-center mb-6">
+                        <img src="122.jpg" alt="High school students conducting experiments in a well-equipped science lab" class="mx-auto h-20 w-20 rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Secondary</h3>
+                    <p class="text-gray-700 mb-4">Grades 6-12  comprehensive program preparing students for board examinations and beyond.</p>
+                    <div class="text-center">
+                        <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Facilities</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Smart Classrooms -->
+                <div class="facility-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300">
+                    <img src="smart.jpg" alt="Modern smart classroom with interactive whiteboard and students engaged in digital learning" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Smart Classrooms</h3>
+                        <p class="text-gray-700">Technology-enhanced learning spaces equipped with interactive whiteboards and audio-visual systems.</p>
+                    </div>
+                </div>
+                
+                <!-- Science Lab -->
+                <div class="facility-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300">
+                    <img src="https://placehold.co/400x250" alt="Well-organized science laboratory with students conducting chemistry experiments" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Science Lab</h3>
+                        <p class="text-gray-700">Fully equipped laboratories for Physics, Chemistry and Biology practicals and experiments.</p>
+                    </div>
+                </div>
+                
+                <!-- Library -->
+                <div class="facility-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300">
+                    <img src="https://placehold.co/400x250" alt="Spacious school library with rows of books and students reading at tables" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Library</h3>
+                        <p class="text-gray-700">Extensive collection of books, periodicals and digital resources to support academic research.</p>
+                    </div>
+                </div>
+                
+                <!-- Sports Complex -->
+                <div class="facility-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300">
+                    <img src="https://placehold.co/400x250" alt="Outdoor sports field with basketball court and students playing various games" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sports Complex</h3>
+                        <p class="text-gray-700">Dedicated spaces for indoor and outdoor sports including basketball, badminton and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">School Gallery</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="m.jpg" alt="Annual function with students performing on stage in colorful costumes" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="sc.jpg" alt="Sports day event with students participating in relay race on sunny field" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="p.jpg" alt="Science exhibition with students showcasing their innovative projects" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="2.jpg" alt="Teachers and students planting trees during environmental awareness drive" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="tour2.jpg" alt="Inter-school debate competition with students presenting arguments" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="tour.jpg" alt="Art classroom with students creating paintings and sculptures" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="121.jpg" alt="Music class with students learning different instruments" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="s1.jpg" alt="Students celebrating graduation with caps and certificates" class="w-full h-56 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition duration-300">View More Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">What Parents Say</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white text-gray-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Smiling parent with crossed arms standing against grey background" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ramesh Shrestha</h4>
+                            <p class="text-sm text-gray-600">Parent of Grade 5 student</p>
+                        </div>
+                    </div>
+                    <p class="italic">"The personalized attention and care my child receives at Shree Mahendra School is exceptional. The teachers truly go above and beyond."</p>
+                    <div class="flex mt-4">
+                        <span class="school-gold">★★★★★</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white text-gray-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Parent wearing glasses smiling professionally" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sunita Thapa</h4>
+                            <p class="text-sm text-gray-600">Parent of Grade 8 student</p>
+                        </div>
+                    </div>
+                    <p class="italic">"The school's focus on both academics and extracurricular activities has helped my daughter develop into a well-rounded individual."</p>
+                    <div class="flex mt-4">
+                        <span class="school-gold">★★★★★</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white text-gray-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Elderly grandfather smiling proudly" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Hari Basnet</h4>
+                            <p class="text-sm text-gray-600">Grandparent of Pre-Primary student</p>
+                        </div>
+                    </div>
+                    <p class="italic">"I'm impressed by how happy and excited my grandson is to go to school every day. The nurturing environment is wonderful."</p>
+                    <div class="flex mt-4">
+                        <span class="school-gold">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4">School Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-medium">Address</p>
+                                    <p class="text-gray-600">Shree Mahendra School</p>
+                                    <p class="text-gray-600">Banganga-5 Kopawa, Nepal</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <p class="text-gray-600">+977 9847590914</p>
+                                    <p class="text-gray-600">+977 9847052988</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <p class="text-gray-600">mahendra.mavi.464@gmail.com</p>
+                                    <!-- <p class="text-gray-600">admission@shreemahendra.edu.np</p> -->
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-medium">Office Hours</p>
+                                    <p class="text-gray-600">Sunday-Friday: 9:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-600">Closed on public holidays</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="font-semibold mb-3">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/Smssnepal?mibextid=rS40aB7S9Ucbxw6v" class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <!-- <a href="#" class="bg-blue-400 text-white p-2 rounded-full hover:bg-blue-500 transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="bg-pink-600 text-white p-2 rounded-full hover:bg-pink-700 transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.858.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.354-.3.883-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.858.182.466.399.8.748 1.15.35.35.683.566 1.15.748.354.137.883.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.354.3-.883.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.354-.137-.883-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.66-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section id="admission" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Admission Process</h2>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Why Choose Shree Mahendra?</h3>
+                    <p class="text-gray-700 mb-4">Our admissions process is designed to help you understand our school philosophy and ensure we're the right fit for your child's educational needs.</p>
+                    <p class="text-gray-700">We maintain small class sizes to ensure personalized attention and focus on holistic development through our comprehensive academic and extracurricular programs.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Requirements</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Completed application form
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Birth certificate copy
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Previous school transcripts (if applicable)
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Medical records
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Fee Structure</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-gray-700">Application Fee</span>
+                                <span class="font-medium">Rs. 1000</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-gray-700">Admission Fee</span>
+                                <span class="font-medium">Rs. 25,000</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-gray-700">Monthly Tuition</span>
+                                <span class="font-medium">Rs. 8,000</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-gray-700">Transportation (monthly)</span>
+                                <span class="font-medium">Rs. 2,500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold text-lg transition duration-300">Download Admission Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-12">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10">
+
+      <!-- Logo and About -->
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="logo1.jpg" alt="Shree Mahendra School logo" class="h-10 mr-2">
+          <span class="text-lg font-bold">Shree Mahendra School</span>
+        </div>
+        <p class="text-gray-300 mb-4">
+          Providing quality education with values since 2017 B.S.
+        </p>
+        <!-- Social Media -->
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/Smssnepal?mibextid=rS40aB7S9Ucbxw6v" aria-label="Facebook" class="text-gray-300 hover:text-white transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+          </a>
+          
+          <!-- <a href="#" aria-label="Twitter" class="text-gray-300 hover:text-white transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996A4.107 4.107 0 0016.616 4c-2.27 0-4.106 1.837-4.106 4.106 0 .32.036.632.106.931-3.415-.171-6.443-1.808-8.47-4.292a4.077 4.077 0 00-.555 2.067c0 1.426.726 2.683 1.83 3.42a4.094 4.094 0 01-1.859-.513v.052c0 1.99 1.416 3.648 3.296 4.023a4.111 4.111 0 01-1.852.07c.522 1.63 2.038 2.815 3.833 2.847a8.24 8.24 0 01-5.096 1.757c-.33 0-.655-.019-.975-.057A11.615 11.615 0 008.29 20.25z" />
+            </svg>
+          </a> -->
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#" class="hover:text-white transition">Home</a></li>
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">Admissions</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+        <ul class="text-gray-300 space-y-2">
+          <li><span>📍</span> Banganga -5 Kopawa K.V</li>
+          <li><span>📞</span> <a href="tel:+977 9847590914" class="hover:text-white">+977 9847590914</a></li>
+<!-- <li><span>✉️</span> <a href="mahendra.mavi.464@gmail.com" class="hover:text-white;">mahendra.mavi.464@gmail.com</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <!-- <div>
+        <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+        <p class="text-gray-300 mb-4">Stay updated with school events and news.</p>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input type="email" placeholder="Your email" required class="px-4 py-2 w-full rounded bg-white text-black focus:outline-none">
+          <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded transition">
+            Subscribe
+          </button>
+        </form>
+      </div> -->
+
+    <!-- </div> -->
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-blue-600 mt-10 pt-6 text-center text-gray-400 text-sm">
+      &copy; 2025 Shree Mahendra School. All rights reserved.
+    </div>
+  </div>
+</footer>
